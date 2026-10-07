@@ -1,0 +1,27 @@
+PROMPTS EN SECUENCIA
+
+#1
+Actúa como un desarrollador experto en Java. Necesito que desarrolles el código completo para una aplicación de escritorio utilizando JavaFX, basada en un caso de uso llamado "Sistema Saludador".
+Requerimientos funcionales:
+La interfaz principal debe tener un botón dirigido al 'estudiante', preferiblemente con el texto "Solicitar saludo".
+Al presionar este botón, el sistema debe solicitar 3 datos al usuario (puedes usar cuadros de diálogo interactivos o un pequeño formulario integrado):
+-Nombre
+-Edad
+-Hora (Debe permitir seleccionar o ingresar explícitamente si es "AM" o "PM").
+Una vez el estudiante ingresa lo solicitado, el sistema debe mostrar una alerta o mensaje en pantalla saludándolo.
+Lógica estricta del saludo:
+Si el usuario seleccionó "AM", el saludo debe comenzar con "Buenos días".
+Si el usuario seleccionó "PM", el saludo debe comenzar con "Buenas tardes".
+Inmediatamente después, el sistema debe saludar al estudiante por su nombre y mencionar su edad de forma natural. (Ejemplo esperado: "Buenos días [Nombre], tienes [Edad] años" o "Buenas tardes [Nombre], me entero que tienes [Edad] años").
+Restricciones técnicas:
+Debe estar escrito exclusivamente en Java usando el framework JavaFX. (Y genera con antelacion un .bat de ejecucion para windows)
+Proporciona el código en un solo archivo principal (si es posible) con todos los imports necesarios, la clase que extiende de Application, y el método main para que pueda copiar, pegar y ejecutar directamente.
+
+#2
+Ahora, genera un archivo de texto plano (.txt) llamado "Instrucciones_Ejecucion.txt". En este archivo, redacta el paso a paso detallado sobre cómo debo compilar y ejecutar el código JavaFX que acabas de crear.
+El archivo debe incluir:
+Prerrequisitos: Qué herramientas necesito tener instaladas (versión de Java/JDK y el SDK de JavaFX, o si usaste Maven/Gradle).
+Compilación: Los comandos exactos de terminal que debo ejecutar para compilar el archivo .java. o lo necesario para solo ejecutar por el .bat
+Ejecución: El comando exacto para ejecutar la aplicación. Asegúrate de incluir los parámetros necesarios de la máquina virtual (VM options) típicos de JavaFX, como --module-path y --add-modules, indicando dónde debo poner la ruta de mi SDK.
+Alternativa con IDE: Una breve indicación de cómo ejecutarlo directamente si estoy usando el botón de "Run" dentro de Cursor o VS Code.
+Redacta las instrucciones de forma muy clara, asumiendo que lo voy a correr desde la terminal de mi sistema.
